@@ -61,6 +61,12 @@ p{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 22px;
 }
+#aboutpage #navbar h1{
+    float: left;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 22px;
+}
 #navbar h1 a:hover{
     color: #f7c08a;
 }
@@ -106,3 +112,57 @@ p{
     padding-bottom: 20px;
     line-height: 1.5em;
 }
+/*About Page CSS*/
+#aboutpage{
+    background: url(../img/background2.jpg) no-repeat
+    center;
+}
+#aboutpage .aboutpage-content{
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+}
+#aboutpage h3{
+    font-size: 50px;
+    line-height: 1.2em;
+    color: #fff;
+
+}
+#aboutpage p{
+    padding-bottom: 20px;
+    line-height: 1.5em;
+    color:#fff;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+  }
+  
+  .row {margin: 0 -5px;}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #1e0b0d;
+  }
+  .profileimg {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
