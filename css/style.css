@@ -14,12 +14,6 @@
 .mainparagraph{
     font-size: 22px;
 }
-.mainfooter{
-    text-align: center;
-    background: #444;
-    color: #fff;
-    padding: 20px;
-}
 .button{
     display: inline-block;
     font-size: 18px;
@@ -32,23 +26,11 @@
     font-family: sans-serif;
     font-weight: bold;
 }
-.btn{
-    display: inline-block;
-    font-size: 18px;
-    color: white;
+.button:hover{
     background: #333;
-    padding: 10px 18px;
-    border: solid white 1px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-family: sans-serif;
-    font-weight: bold;
-}
-.btn:hover{
-    /* background: #333; */
     color: #f7c08a;
-    /* border: solid white 1px; */
-    border-radius: 6px;
+    border: solid #f7c08a 1px;
+    border-radius: 3px;
 }
 /* Main Styling */
 body{
@@ -66,21 +48,18 @@ p{
     margin: 10px 0;
 }
 #navbar{
-    background: rgb(41, 40, 40);
+    /* background: #333; */
     color: #fff;
     overflow: auto;
-    padding-bottom: 15px;
-    
 }
 #navbar a{
     color: #fff;
 }
-#navbar h1{
+#mainpage #navbar h1{
     float: left;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 30px;
-    /* position: fixed; */
+    margin-top: 22px;
 }
 #aboutpage #navbar h1{
     float: left;
@@ -93,10 +72,7 @@ p{
 }
 #navbar ul{
     list-style: none;
-    /* position: fixed; */
-    left: 60%;
     float: right;
-    
 }
 #navbar li{
     float: left;
@@ -116,7 +92,6 @@ p{
     border: solid white 1px;
     color: #f7c08a;
 }
-
 /* Main Page */
 #mainpage{
     background: url(../img/background3.jpg) no-repeat
@@ -137,7 +112,6 @@ p{
     padding-bottom: 20px;
     line-height: 1.5em;
 }
-
 /*About Page CSS*/
 #aboutpage{
     background: url(../img/background2.jpg) no-repeat
@@ -147,13 +121,6 @@ p{
     color: #fff;
     text-align: center;
     padding-top: 100px;
-}
-#aboutpage #navbar h1{
-    float: left;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 30px;
-    position: fixed;
 }
 #aboutpage h3{
     font-size: 50px;
@@ -199,8 +166,7 @@ p{
     width: 200px;
     height: 200px;
   }
-
-/* Contacts PAGE */
+  /* Contacts PAGE */
 /* #contactpage{
     background: black no-repeat
     center;
@@ -233,4 +199,46 @@ p{
 }
 #contactform textarea{
     height: 200px;
+}
+/*Services Page CSS*/
+#servicespage{
+    background: url(../img/background2.jpg) no-repeat
+    center;
+}
+#servicespage .servicespage-content{
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+}
+#servicespage h3{
+    font-size: 50px;
+    line-height: 1.2em;
+    color: #fff;
+
+}
+#servicespage p{
+    padding-bottom: 20px;
+    line-height: 1.5em;
+    color:#fff;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+  
+.row {margin: 0 -5px;}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
 }
