@@ -48,7 +48,7 @@ p{
     margin: 10px 0;
 }
 #navbar{
-    /* background: #333; */
+    background: #333;
     color: #fff;
     overflow: auto;
 }
@@ -65,7 +65,7 @@ p{
     float: left;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 22px;
+    margin-top: 27px;
 }
 #navbar h1 a:hover{
     color: #f7c08a;
@@ -79,9 +79,10 @@ p{
 }
 #navbar li a{
     display: block;
-    margin-top: 22px;
+    margin-top: 15px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 15px;
     padding: 10px 20px;
     text-align: center;
 }
@@ -137,23 +138,23 @@ p{
     float: left;
     width: 50%;
     padding: 0 10px;
-  }
+}
   
-  .row {margin: 0 -5px;}
+.row {margin: 0 -5px;}
   
-  .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
   
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .column {
       width: 100%;
       display: block;
       margin-bottom: 20px;
     }
-  }
+}
   
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -221,10 +222,15 @@ p{
     line-height: 1.5em;
     color:#fff;
 }
+* {
+    box-sizing: border-box;
+}
+  
 .column {
     float: left;
-    width: 50%;
-    padding: 0 10px;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
 }
   
 .row {margin: 0 -5px;}
